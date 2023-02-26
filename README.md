@@ -106,7 +106,28 @@ Muokkasin apps.py, settings.py, models.py ja admin.py sen mukaisesti, sekä tied
 
 Tämän jälkeen migratesin uudelleen muutokset ja käynnistin palvelimen.
 
+![kuva](https://user-images.githubusercontent.com/105205141/221410400-4c6df094-6b87-465f-8654-6793f2bb6de3.png)
 
+Nyt taulu näyttää järkevältä.
 
+Kun kokeilin luoda Add -painikkeella uuden esineen tauluun niin se tulostaa sen nimeksi:
 
+![kuva](https://user-images.githubusercontent.com/105205141/221410493-34d0b39d-902f-4f11-bd45-ac85405286ea.png)
+
+Tätä varten kävin avaamassa models.py tiedoston ja lisäsin seuraavan osan: 
+
+![kuva](https://user-images.githubusercontent.com/105205141/221410567-ef1cb6b4-8392-4592-b269-a4a921a5632a.png)
+
+sitten taas tein migrate komennot ja käynnistin uudelleen:
+
+       ./manage.py makemigrations
+       ./manage.py migrate
+       ./manage.py runserver
+       
+kirjauduin taas admin sivulle ja katsoin taulua:
+
+![kuva](https://user-images.githubusercontent.com/105205141/221410644-c4693d6d-1045-4542-86b2-bb56a886f362.png)
+
+Ja nyt objektin nimi näkyy! Loistavaa. 
+Lopetin tehtävän a) klo 14.32.
 
