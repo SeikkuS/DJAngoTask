@@ -131,3 +131,7 @@ kirjauduin taas admin sivulle ja katsoin taulua:
 Ja nyt objektin nimi näkyy! Loistavaa. 
 Lopetin tehtävän a) klo 14.32.
 
+# Lähteet 
+
+https://terokarvinen.com/2022/django-instant-crm-tutorial/
+
